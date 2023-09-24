@@ -3,13 +3,12 @@ package com.hb.betterreadsapp.book;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class BookController {
 
 	private static final String IMAGE_ROOT = "http://covers.openlibrary.org/b/id/";
